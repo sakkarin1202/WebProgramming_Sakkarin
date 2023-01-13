@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
+*{
+    font-family: 'K2D', sans-serif;
+    padding: 5px;
+}
+p{
+    color: rgb(201, 15, 201);
+    text-align: center;
+    padding: 10px;
+    
+    min-width: 350px;
+    border-bottom-style:dotted ;
+    border-top-style:dashed ;
+    border-bottom:dotted 2px Red ;
+    border-top-width:2px pink;
+}
+.happy{
+    background-color: aquamarine;
+    text-align: center;
+    border-top-left-radius:20px ;
+    border-bottom-right-radius:30px ;
+}
+
+
+   
+#love {
+    text-decoration: line-through;
+    background-color: aqua;
+}
+#สวัสดี{
+    text-decoration: line-through;
+    background-color: palevioletred;
+}
+span {
+    color: blue;
+}
+
+    body{
+    background-image: url(https://img.pptvhd36.com/thumbor/2020/07/15/news-947b70f272.jpg);
+    background-size:cover ;
+    background-attachment:fixed ;
+}

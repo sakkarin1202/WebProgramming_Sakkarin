@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sakkarin's portfolio</title>
+  </head>
+  <body>
+    <!-- หัวข้อเรื่อง-->
+    <header>
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Sakkarin Rodjit</span> <br/> From Nakhon Pathom</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- ข้อมูล-->
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/vick.png" alt="user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">about Me</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus sed eveniet laboriosam? Velit nihil accusamus iste provident. Nulla placeat facilis soluta vitae similique ea incidunt vel quibusdam. Sit, asperiores culpa.
+                </p>
+                
+                <div class="tab-title">
+                    <p class="tab-link active-link"onclick="opentab('skills')">Skills</p>
+                    <p class="tab-link"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-link"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-content active-tab" id="skills"></div>
+                    <ul>
+                        <li><span>UX/UI Designing</span> </br>web/App interface</li>
+                        <li><span> Development</span> </br>Web application Development</li>
+                        <li><span> Development </span><br> Building Android/iOS App</li>
+                    </ul>
+                    
+                <div class="tab-content " id="experience">
+                        <ul>
+                            <li><span>2016-2022</span> </br>Study</li>
+                            <li><span> Development</span> </br>Web application Development</li>
+                            <li><span> Development </span><br> Building Android/iOs App</li>
+                        </ul>
+                </div>
+                
+                <div class="tab-content " id="education">
+                        <ul>
+                            <li><span>UX/UI Designing</span> </br>web/App interface</li>
+                            <li><span> Development</span> </br>Web application Development</li>
+                            <li><span> Development </span><br> Building Android/iOs App</li>
+                        </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    <!-- โปรเจค-->
+
+    <!-- โปรไฟล์-->
+
+    <!-- ช่องทางติดต่อ-->
+    <script>
+        const tablinks=document.getElementsByClassName("tab-link");
+        const tabcontents=document.getElementsByClassName("tab-content");
+        const opentab=(tabname)=> {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+       
+        }
+
+    </script>
+  </body>
+</html>
