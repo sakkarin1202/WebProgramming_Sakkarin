@@ -4,13 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=K2D&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=K2D&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
     <title>Sakkarin's portfolio</title>
   </head>
   <body>
@@ -39,41 +36,40 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/vick.png" alt="user">
+                <img src="images/user.png" alt="user">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">about Me</h1>
+                <h1 class="sub-title">About Me</h1>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus sed eveniet laboriosam? Velit nihil accusamus iste provident. Nulla placeat facilis soluta vitae similique ea incidunt vel quibusdam. Sit, asperiores culpa.
                 </p>
                 
                 <div class="tab-title">
-                    <p class="tab-link active-link"onclick="opentab('skills')">Skills</p>
-                    <p class="tab-link"onclick="opentab('experience')">Experience</p>
-                    <p class="tab-link"onclick="opentab('education')">Education</p>
+                    <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-link" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-content active-tab" id="skills"></div>
+                <div class="tab-content active-tab" id="skills">
                     <ul>
-                        <li><span>UX/UI Designing</span> </br>web/App interface</li>
-                        <li><span> Development</span> </br>Web application Development</li>
-                        <li><span> Development </span><br> Building Android/iOS App</li>
+                        <li><span>UX/UI</span> </br> Designing Web/App interface</li>
+                        <li><span>Web Development</span> </br> Web application development</li>
+                        <li><span>App Development</span> </br> Building Android/iOS App</li>
                     </ul>
-                    
-                <div class="tab-content " id="experience">
-                        <ul>
-                            <li><span>2016-2022</span> </br>Study</li>
-                            <li><span> Development</span> </br>Web application Development</li>
-                            <li><span> Development </span><br> Building Android/iOs App</li>
-                        </ul>
                 </div>
-                
-                <div class="tab-content " id="education">
-                        <ul>
-                            <li><span>UX/UI Designing</span> </br>web/App interface</li>
-                            <li><span> Development</span> </br>Web application Development</li>
-                            <li><span> Development </span><br> Building Android/iOs App</li>
-                        </ul>
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li><span>Experience01</span> </br> Experience Text</li>
+                        <li><span>Experience02</span> </br> Experience Text</li>
+                        <li><span>Experience03</span> </br> Experience Text</li>
+                    </ul>
                 </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>0000 - 0000</span> </br> มหาวิทยาลัยราชภัฏนครปฐม</li>
+                        <li><span>0000 - 0000</span> </br> โรงเรียนบางแพปฐมพิทยา</li>
+                        <li><span>0000 - 0000</span> </br> โรงเรียนชุมชนวัดใหญ่โพหัก</li>
+                    </ul>
+                        </div>
             </div>
             
         </div>
@@ -85,9 +81,10 @@
 
     <!-- ช่องทางติดต่อ-->
     <script>
-        const tablinks=document.getElementsByClassName("tab-link");
-        const tabcontents=document.getElementsByClassName("tab-content");
-        const opentab=(tabname)=> {
+
+        const tablinks = document.getElementsByClassName("tab-link");
+        const tabcontents = document.getElementsByClassName("tab-content");
+        const opentab = (tabname) =>{
             for(tablink of tablinks){
                 tablink.classList.remove("active-link");
             }
@@ -96,7 +93,6 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab")
-       
         }
 
     </script>
